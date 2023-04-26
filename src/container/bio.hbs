@@ -1,0 +1,142 @@
+{{! 
+Це код container файлу для summary сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/summary"
+}}
+<div>
+  <section>
+    <h1><b>{{name}}</b></h1>
+
+    <hr />
+    <br />
+
+    <h3>Birthdate: {{birthdate}} - {{birthplace}}</h3>
+    <h3>Deathdate: {{deathdate}} - {{deathplace}}</h3>
+    <h3>Nationality: {{nationality}}</h3>
+    <h3>Occupation: {{occupation}}</h3>
+
+    <br />
+
+    {{#with known_for}}
+      <b><p>Known for</p></b>
+      <ul>
+        <li><cite>Theory of Relativity</cite></li>
+        <li><cite>E=mc²</cite></li>
+        <li><cite>Photoelectric Effect</cite></li>
+        <li><cite>Brownian Motion</cite></li>
+      </ul>
+    {{/with}}
+
+    <br />
+
+    {{#each education}}
+      <b><p>Education</p></b>
+      <ul>
+        <li>degree: {{degree}}</li>
+        <li>field: {{field}}</li>
+        <li>institution: {{institution}}</li>
+        <li>year: {{year}}</li>
+      </ul>
+    {{/each}}
+
+    <br />
+
+    <b><p>Publications</p></b>
+    {{#each notable_publications}}
+      <ul>
+        <li><cite>title: {{title}}</cite></li>
+        <li>year: {{year}}</li>
+        <li>publisher: {{publisher}}</li>
+      </ul>
+    {{/each}}
+
+    <br />
+
+    <b><p>Partners</p></b>
+    {{#each partners}}
+      <ul>
+        <li>name: {{name}}</li>
+        <li>relationship: {{relationship}}</li>
+        <li>years: {{years}}</li>
+      </ul>
+    {{/each}}
+
+    <br />
+
+    {{#each awards}}
+      <b><p>Awards</p></b>
+      <ul>
+        <li>title: {{title}}</li>
+        <li>year: {{year}}</li>
+        <li>description: {{description}}</li>
+      </ul>
+    {{/each}}
+
+    <br />
+
+    {{#with influences}}
+      <b><p>Influences</p></b>
+      <ul>
+        <li>Isaac Newton</li>
+        <li>James Clerk Maxwell</li>
+        <li>Hermann Minkowski</li>
+      </ul>
+    {{/with}}
+
+    <br />
+
+    {{#with influenced}}
+      <b><p>Influenced</p></b>
+      <ul>
+        <li>Niels Bohr</li>
+        <li>Erwin Schrödinger</li>
+        <li>Werner Heisenberg</li>
+        <li>Richard Feynman</li>
+      </ul>
+    {{/with}}
+
+    <br />
+
+    {{#with quotes}}
+      <b><p>Quotes</p></b>
+      <ul>
+        <li><cite>Imagination is more important than
+            knowledge.</cite></li>
+        <li><cite>I have no special talent. I am only
+            passionately curious</cite></li>
+        <li><cite>The important thing is not to stop
+            questioning.</cite></li>
+        <li><cite>The most beautiful thing we can experience
+            is the mysterious. It is the source of all true
+            art and all science.</cite></li>
+      </ul>
+    {{/with}}
+
+    <br />
+
+    {{#each major_discoveries}}
+      <b><p>Major discoveries</p></b>
+      <ul>
+        <li><cite>title: {{title}}</cite></li>
+        <li>year: {{year}}</li>
+        <li>description: {{description}}</li>
+      </ul>
+    {{/each}}
+
+    <br />
+
+    {{#with contributions}}
+      <b><p>Contributions</p></b>
+      <ul>
+        <li><cite>title: {{title}}</cite></li>
+        <li>description: {{description}}</li>
+        <li>year: {{year}}</li>
+        <li>field: {{field}}</li>
+      </ul>
+    {{/with}}
+
+  </section>
+</div>
+{{!-- 
+    Цей код містить лише те, що буде виводитись в {{{body}}} в layout/default.hbs
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
