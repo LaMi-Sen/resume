@@ -13,8 +13,9 @@
       <li>Name: {{name}}</li>
       <li>Gender: {{gender}}</li>
       <li>Age: {{age}}</li>
+
+      {{#if friends}}<h4>Friends:</h4>{{/if}}
       <ul>
-        {{#if friends}}<h4>Friends:</h4>{{/if}}
         {{#each friends}}
           <li>Id: {{id}}</li>
           <li>Name: {{name}}</li>
