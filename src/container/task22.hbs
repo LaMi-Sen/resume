@@ -1,0 +1,154 @@
+<h1 class='text-center text-capitalize'>Page header</h1>
+{{#with page_header}}
+  <br />
+  <ul>
+    <h5
+        class='text-center text-uppercase'
+      >{{title}}</h5>
+    <h5
+        class='text-center text-uppercase'
+      >{{description}}</h5>
+    <br />
+  </ul>
+{{/with}}
+<br />
+
+<div class='card'>
+  <div class='card-body'>
+    <div class='text-end display-6'>Section</div>
+    {{#with section}}
+      <br />
+      <ul>
+        <h2 class='text-end'>About us</h2>
+        {{#with about_us}}
+          <br />
+          <ul>
+            <div class='text-muted'>Title list:</div>
+            {{#with title_list}}
+              <br />
+              <ul>
+                <li><div class='text-muted'>
+                    {{main}}</divn></li>
+                <br />
+                <li><div
+                    class='text-muted'
+                  >{{sub}}</div></li>
+              </ul>
+            {{/with}}
+            <br />
+            <div class='text-muted'>Button:</div>
+            {{#with button}}
+            <br />
+              <ul>
+                <a class='btn btn-info' href='#' role='button'>{{text}}</a>
+              </ul>
+            {{/with}}
+          </ul>
+        {{/with}}
+  </div>
+</div>
+
+    <br />
+    <br />
+    <div class='card'>
+      <div class='card-body'>
+        <div class='display-5'>Advantage</div>
+        {{#with advantage}}
+        <br>  
+          <ul> 
+            <div class='card' style='max-width: 32.5rem;'>
+            <div class='card-body'>
+            <div class='display-4'>Efficiency</div>
+            {{#with efficiency}}
+            <br />
+              <ul>  
+                <h6 class='text-muted'>{{sub_title}}</h6>
+                <br />
+                <p class='text-muted'>{{description}}</p>
+                <br />
+                <a href='#' class="btn btn-outline-warning">{{button}}</a>
+                <br />
+              </ul>  
+            {{/with}}
+      </div>
+    </div>
+    
+     
+        <br />
+        <br />
+        <div class='card' style='max-width: 32.5rem;'>
+          <div class='card-body'>
+            <div class='text-center display-4'>Innovation</div>
+            {{#with innovation}}
+            <br />
+              <ul> 
+                <h6 class='text-center text-capitalize'>{{sub_title}}</h6>
+                <br />
+                <p class='text-center text-capitalize'>{{description}}</p>
+                <br />
+                <a href='#' class="btn btn-outline-warning">{{button}}</a>
+                <br />
+              </ul>
+            {{/with}}
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <div class='card' style='max-width: 32.5rem;'>
+          <div class='card-body' >
+            <div class='text-end display-4'>Collaboration</div>
+            {{#with collaboration}}
+            <br />
+              <ul>
+                <h6 class='text-end text-capitalize'>{{sub_title}}</h6>
+                <br />
+                <p class='text-end text-capitalize'>{{description}}</p>
+                <br />
+                <a href='#' class="btn btn-outline-warning">{{button}}</a>
+
+              </ul>
+            {{/with}}
+          </div>
+        </div>
+          </ul>
+        {{/with}}
+  </div>
+</div>    
+
+    <br />
+    <br />
+    <div class='card'>
+      <div class='card-body'>
+        <div class='display-5'>Agreement</div>
+        {{#with agreement}}
+        <br />  
+          <ul> 
+            <div class='card' style='max-width: 32.5rem;'>
+              <div class='card-body'>
+                <h5 class='text-muted'>Info</h5>
+                {{#with info}}
+                <br />
+                  <ul>
+                    <div class='card' style='max-width: 26rem;'>
+                      <div class='card-body'>    
+                        <h6 class='text-muted'>{{sub_title}}</h6>
+                        <p class='text-muted'>Detail:</p>
+                        {{#with detail}}
+                            <p class='text-muted'>{{text}}</p> 
+                            <button class='btn btn-success'>Аccept</button>
+                            <br>
+                        {{/with}}
+                  </ul> 
+                {{/with}}
+                <br>
+                <br>
+              </div>
+            </div>
+          </ul>
+          <br>
+        {{/with}}
+      </div>
+    </div>
+      </ul>
+    {{/with}}   
