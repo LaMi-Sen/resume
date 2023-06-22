@@ -1,0 +1,450 @@
+<main>
+  <div class='display-5'>Navigation</div>
+  {{#with navigation}}
+    <nav>
+      {{#each links}}
+        <a class='btn btn-link' href='{{href}}'>{{text}}</a>
+      {{/each}}
+
+      <a
+        class='btn btn-primary'
+        href='{{button.href}}'
+      >{{button.text}}</a>
+
+      <hr />
+    </nav>
+  {{/with}}
+
+  <h1 class='text'>Header</h1>
+  {{#with header}}
+    <br />
+    <p class='text-muted'>{{title}}</p>
+    <br />
+    <p class='text-muted'>{{description}}</p>
+    <br />
+    <a
+      href='https://www.youtube.com/'
+      class='btn btn-primary'
+    >{{button.text}}</a>
+    {{#with button}}
+      <br />
+
+      <hr />
+    {{/with}}
+  {{/with}}
+
+  <h2 class='text'>City</h2>
+  {{#with city}}
+
+    <div class='row row-cols-1 row-cols-md-2 g-4'>
+      <div class='col'>
+        <div class='card'>
+          <img
+            src='https://picsum.photos/400/200'
+            class='card-img-top'
+            alt='New York'
+          />
+          <div class='card-body'>
+            <h5 class='card-title'>New York City</h5>
+            <p class='card-text'>New York City comprises 5
+              boroughs sitting where the Hudson River meets
+              the Atlantic Ocean. At its core is Manhattan,
+              a densely populated borough that’s among the
+              world’s major commercial, financial and
+              cultural centers. Its iconic sites include
+              skyscrapers such as the Empire State Building
+              and sprawling Central Park.</p>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <a
+              href='https://github.com/'
+              class='btn btn-primary'
+            >Read</a>
+
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <div class='card'>
+          <img
+            src='https://picsum.photos/400/200'
+            class='card-img-top'
+            alt='Paris'
+          />
+          <div class='card-body'>
+            <h5 class='card-title'>Paris</h5>
+            <p class='card-text'>Paris, France's capital, is
+              a major European city and a global center for
+              art, fashion, gastronomy, and culture. Its
+              19th-century cityscape is crisscrossed by wide
+              boulevards and the River Seine. Beyond such
+              landmarks as the Eiffel Tower and the
+              12th-century, Gothic Notre-Dame cathedral, the
+              city is known for its cafe culture, haute
+              couture fashion houses, and designer boutiques
+              along the Rue du Faubourg Saint-Honoré.</p>
+            <a
+              href='https://github.com/'
+              class='btn btn-primary'
+            >Read</a>
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <div class='card'>
+          <img
+            src='https://picsum.photos/400/200'
+            class='card-img-top'
+            alt='Tokyo'
+          />
+          <div class='card-body'>
+            <h5 class='card-title'>Tokyo</h5>
+            <p class='card-text'>Tokyo, Japan’s bustling
+              capital, mixes the ultramodern and the
+              traditional, from neon-lit skyscrapers to
+              historic temples. The opulent Meiji Shinto
+              Shrine is known for its towering gate and
+              surrounding woods. The Imperial Palace sits
+              amid large public gardens. The city's many
+              museums offer exhibits ranging from classical
+              art (in the Tokyo National Museum) to a
+              reconstructed kabuki theater (in the Edo-Tokyo
+              Museum).</p>
+            <a
+              href='https://github.com/'
+              class='btn btn-primary'
+            >Reac</a>
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <div class='card'>
+          <img
+            src='https://picsum.photos/400/200'
+            class='card-img-top'
+            alt='Sydney'
+          />
+          <div class='card-body'>
+            <h5 class='card-title'>Sydney</h5>
+            <p class='card-text'>Sydney, capital of New
+              South Wales and one of Australia's largest
+              cities, is best known for its harborfront
+              Opera House, with a distinctive sail-like
+              design. Massive Darling Harbour and the
+              smaller Circular Quay port are hubs of
+              waterside life, with the arched Harbour Bridge
+              and esteemed Royal Botanic Garden nearby.
+              Sydney Tower’s outdoor platform, the Skywalk,
+              offers 360-degree views of the city and
+              suburbs.</p>
+            <a
+              href='https://github.com'
+              class='btn btn-primary'
+            >Reac</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {{/with}}
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
+  <h2 class='text'>Winner</h2>
+  {{#with winner}}
+    <br />
+    <table class='table'>
+      <thead>
+        <tr>
+          <th scope='col'>#</th>
+          <th scope='col'>Name</th>
+          <th scope='col'>Surname</th>
+          <th scope='col'>Nickname</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope='row'>1</th>
+          <td>Ada</td>
+          <td>Lovelace</td>
+          <td>The Enchantress of Numbers</td>
+        </tr>
+        <tr>
+          <th scope='row'>2</th>
+          <td>Grace</td>
+          <td>Hopper</td>
+          <td>Amazing Grace</td>
+        </tr>
+        <tr>
+          <th scope='row'>3</th>
+          <td>Katherine</td>
+          <td>Johnson</td>
+          <td>The Human Computer</td>
+        </tr>
+      </tbody>
+    </table>
+
+  {{/with}}
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
+  {{#with gallery}}
+    <h2 class='text'>Picture history</h2>
+    {{#with title}}
+      <br />
+      <br />
+      <div class='table-responsive'>
+        <table class='table align-middle'>
+          <thead class='table-light'>
+            <tr>
+              <td>The Mona Lisa</td>
+              <td>The Persistence of Memory</td>
+              <td>The Starry Night</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class='align-bottom'>
+              <td>Painting</td>
+              <td>Painting</td>
+              <td>Painting</td>
+            </tr>
+
+            <tr>
+              <td>Oil on poplar panel</td>
+              <td>Oil on canvas</td>
+              <td>Oil on canvas</td>
+            </tr>
+            <tr>
+              <td>1503-1519</td>
+              <td>1931</td>
+              <td>1889</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    {{/with}}
+  {{/with}}
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
+  {{#with relaxion}}
+    <div class='display-3'>Relax</div>
+    {{#with title}}
+      <br />
+      <br />
+      <div class='row row-cols-1 row-cols-md-2 g-4'>
+        <div class='col'>
+          <div class='card text-bg-secondary h-100'>
+            <div class='card-header'>Meditation</div>
+            <div class='card-body'>
+              <h5 class='card-title'>The Benefits of
+                Meditation</h5>
+              <p class='card-text'>Meditation can help
+                reduce stress, anxiety, and depression, and
+                improve overall well-being. Studies have
+                also shown that regular meditation practice
+                can enhance cognitive function and even
+                boost the immune system.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class='col'>
+          <div class='card text-bg-secondary h-100'>
+            <div class='card-header'>Hydration</div>
+            <div class='card-body'>
+              <h5 class='card-title'>The Importance of
+                Hydration</h5>
+              <p class='card-text'>Drinking enough water is
+                essential for good health. Dehydration can
+                lead to a range of symptoms, including
+                fatigue, headaches, and constipation. It can
+                also increase the risk of kidney stones and
+                other health problems.</p>
+            </div>
+          </div>
+        </div>
+        <div class='col'>
+          <div class='card text-bg-secondary h-100'>
+            <div class='card-header'>Yoga</div>
+            <div class='card-body'>
+              <h5 class='card-title'>The Benefits of Yoga</h5>
+              <p class='card-text'>Yoga can improve
+                flexibility, strength, and balance, and help
+                reduce stress and anxiety. It has also been
+                shown to improve heart health and promote a
+                sense of well-being.</p>
+            </div>
+          </div>
+        </div>
+        <div class='col'>
+          <div class='card text-bg-secondary h-100'>
+            <div class='card-header'>Sunscreen</div>
+            <div class='card-body'>
+              <h5 class='card-title'>The Importance of
+                Sunscreen</h5>
+              <p class='card-text'>Protecting your skin from
+                the sun's harmful rays is crucial for
+                reducing the risk of skin cancer and
+                premature aging. Experts recommend using a
+                broad-spectrum sunscreen with an SPF of at
+                least 30 and reapplying every two hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/with}}
+  {{/with}}
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
+  {{#with rest}}
+    <br />
+    <br />
+
+    <div class='row row-cols-1 row-cols-md-2 g-4'>
+      <div class='col'>
+
+        <div class='card text-center'>
+          <div class='card-header'>
+            Cooking
+          </div>
+          <div class='card-body'>
+            <h5 class='card-title'>The Joy of Cooking</h5>
+            <br />
+            <p class='card-text'>Cooking is a creative
+              outlet that can bring people together over
+              delicious food.</p>
+            <a href='#' class='btn btn-primary'>Learn More</a>
+          </div>
+          <div class='card-footer text-center'>
+            Photo by Brooke Lark on Unsplash
+          </div>
+        </div>
+      </div>
+
+      <div class='col'>
+        <div class='card text-center'>
+          <div class='card-header'>
+            Travel
+          </div>
+          <div class='card-body'>
+            <h5 class='card-title'>The Benefits of Traveling</h5>
+            <p class='card-text'>Traveling broadens your
+              perspective, provides new experiences, and
+              creates lasting memories.</p>
+            <a href='#' class='btn btn-primary'>Explore</a>
+          </div>
+          <div class='card-footer text-center'>
+            Photo by Sime Basioli on Unsplash
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  {{/with}}
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
+  {{#with proposition}}
+    <div class='display-2'>Proposition</div>
+    <br />
+    <br />
+
+    <div class='row row-cols-1 row-cols-md-2 g-4'>
+      <div class='col'>
+        <div class='card text-bg-warning h-100'>
+          <div class='card-header'>Our Approach</div>
+          <div class='card-body'>
+            <h5 class='card-title'>Innovative Solutions for
+              Your Business</h5>
+            <p class='card-text'>We create effective
+              solutions that cater to your business needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='col'>
+        <div class='card text-bg-warning h-100'>
+          <div class='card-header'>Our Expertise</div>
+          <div class='card-body'>
+            <h5 class='card-title'>Trusted and Experienced
+              Professionals</h5>
+            <p class='card-text'>Our team of experts
+              delivers tailored strategies for best results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {{/with}}
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
+  {{#with footer}}
+    <h5>{{title}}</h5>
+    <br />
+    <br />
+    <div
+      class='row row-cols-2 row-cols-lg-3 g-2 g-lg-3 p-6'
+    >
+
+      <div class='col-3'>
+        {{#each navigation}}
+          <br />
+          <div>
+            <a
+              href='{{href}}'
+              class='btn btn-link'
+            >{{text}}</a></div>
+
+        {{/each}}
+      </div>
+      <div class='col-3'>
+        {{#each socialMedia}}
+          <br />
+          <div>
+            <a
+              class='btn btn-outline-dark'
+              href='{{link}}'
+            >{{name}}</a>
+          </div>
+
+        {{/each}}
+        <br />
+      </div>
+      <div class='col-3'>
+        {{#each partners}}
+          <br />
+          <div>
+            <a
+              class='btn btn-outline-info'
+              href='{{link}}'
+            >{{name}}</a>
+          </div>
+        {{/each}}
+      </div>
+
+    </div>
+
+  {{/with}}
+</main>
